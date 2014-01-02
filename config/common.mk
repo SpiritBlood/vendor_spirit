@@ -221,6 +221,11 @@ PRODUCT_COPY_FILES += \
     vendor/spirit/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/spirit/prebuilt/common/su/Superuser.apk:system/app/SuperSU/SuperSU.apk
 
+# HFM Files
+PRODUCT_COPY_FILES += \
+	vendor/spirit/prebuilt/common/hfm/hosts.alt:system/etc/hosts.alt \
+	vendor/spirit/prebuilt/common/hfm/hosts.og:system/etc/hosts.og
+
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
     vendor/spirit/prebuilt/common/app/Nova_Launcher_3.3beta3.apk:system/priv-app/Nova_Launcher/Nova_Launcher_3.3beta3.apk
