@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     KernelTweaker \
+    EOSWeather \
     LockClock \
     CMFota \
     CMAccount \
