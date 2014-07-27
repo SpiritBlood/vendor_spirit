@@ -326,10 +326,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
 # Add SUPER SU support
 PRODUCT_COPY_FILES += \
-     vendor/cm/prebuilt/common/su/su:system/xbin/daemonsu \
-     vendor/cm/prebuilt/common/su/su:system/xbin/su \
-     vendor/cm/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-     vendor/cm/prebuilt/common/su/Superuser.apk:system/app/Superuser.apk
+    vendor/cm/prebuilt/common/su/su:system/xbin/daemonsu \
+    vendor/cm/prebuilt/common/su/su:system/xbin/su \
+    vendor/cm/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/cm/prebuilt/common/su/Superuser.apk:system/app/Superuser.apk
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
