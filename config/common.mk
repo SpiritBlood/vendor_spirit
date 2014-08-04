@@ -137,8 +137,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-    DSPManager \
-    libcyanogen-dsp \
     audio_effects.conf \
     Apollo \
     CMFileManager \
@@ -330,6 +328,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/su/su:system/xbin/su \
     vendor/cm/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
     vendor/cm/prebuilt/common/su/Superuser.apk:system/app/Superuser.apk
+
+# Viper4Android
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/app/ViPER4Android.apk:system/app/ViPER4Android.apk
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
