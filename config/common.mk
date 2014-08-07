@@ -335,7 +335,7 @@ PRODUCT_COPY_FILES += \
 
 # Viper4Android
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/app/ViPER4Android.apk:system/app/ViPER4Android.apk
+    vendor/cm/prebuilt/common/app/ViPER4Android_FX_A4.x.apk:system/priv-app/ViPER4Android_FX_A4.x.apk
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
