@@ -310,7 +310,7 @@ endif
 
 SPIRIT_VERSION = v1.2
 SpiritRom_Version=4.4.4
-CM_MOD_VERSION := Spirit-Blood-$(SpiritRom_Version)-$(SPIRIT_VERSION)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
+CM_MOD_VERSION := SpiritBlood-$(SpiritRom_Version)-$(SPIRIT_VERSION)-$(shell date -u +%Y%m%d)$(CM_EXTRAVERSION)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.spirit.version=$(SPIRIT_VERSION) \
