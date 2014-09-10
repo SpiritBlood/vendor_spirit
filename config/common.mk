@@ -236,9 +236,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 endif
 
-# easy way to extend to add more packages
--include vendor/extra/product.mk
-
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 11
@@ -330,6 +327,8 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
 -include vendor/cyngn/product.mk
 
+$(call inherit-product-if-exists, vendor/extra/product.mk)
+
 # Add SUPER SU support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/su/su:system/xbin/daemonsu \
@@ -339,4 +338,4 @@ PRODUCT_COPY_FILES += \
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/app/Nova_Launcher_3.1.apk:system/priv-app/Nova_Launcher_3.1.apk
+    vendor/cm/prebuilt/common/app/Nova_Launcher_3.1.apk:system/priv-app/Nova_Launcher_3.1.apk`
