@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     KernelTweaker \
     LockClock \
-    CMFota \
     CMAccount \
     CMHome
 
