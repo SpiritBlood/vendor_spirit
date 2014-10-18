@@ -337,4 +337,4 @@ PRODUCT_COPY_FILES += \
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/app/Nova_Launcher_3.1.apk:system/priv-app/Nova_Launcher_3.1.apk
+    vendor/cm/prebuilt/common/app/Nova_Launcher_3.1.1beta2.apk:system/priv-app/Nova_Launcher_3.1.1beta2.apk
