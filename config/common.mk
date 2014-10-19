@@ -111,7 +111,7 @@ PRODUCT_COPY_FILES += \
     vendor/spirit/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
 # T-Mobile theme engine
-include vendor/cm/config/themes_common.mk
+include vendor/spirit/config/themes_common.mk
 
 # Required Packages
 PRODUCT_PACKAGES += \
