@@ -240,3 +240,7 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 -include vendor/cyngn/product.mk
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+
+# SPIRIT EXTRA Files
+PRODUCT_COPY_FILES += \
+    vendor/spirit/prebuilt/common/app/Nova_Launcher_3.2.apk:system/priv-app/Nova_Launcher_3.2.apk
