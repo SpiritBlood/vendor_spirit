@@ -205,7 +205,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/spirit/overlay/common
 SPIRIT_VERSION_MAJOR = 5
 SPIRIT_VERSION_MINOR = 0
 Version = v2.00
-SPIRIT_VERSION := SpiritRom-$(SPIRIT_VERSION_MAJOR).$(SPIRIT_VERSION_MINOR)-$(Version)-$(shell date -u +%Y%m%d)-$(SPIRIT_BUILD)
+SPIRIT_VERSION := SpiritBlood-$(SPIRIT_VERSION_MAJOR).$(SPIRIT_VERSION_MINOR)-$(Version)-$(shell date -u +%Y%m%d)-$(SPIRIT_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.spirit.version=$(SPIRIT_VERSION) \
