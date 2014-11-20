@@ -243,4 +243,4 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
-    vendor/spirit/prebuilt/common/app/Nova_Launcher_3.2.apk:system/priv-app/Nova_Launcher_3.2.apk
+    vendor/spirit/prebuilt/common/app/Nova_Launcher_3.3beta1.apk:system/priv-app/Nova_Launcher_3.3beta1.apk
