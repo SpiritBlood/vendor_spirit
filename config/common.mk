@@ -1,8 +1,5 @@
 PRODUCT_BRAND ?= Spirit
 
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
-
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
@@ -193,9 +190,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
-    Superuser \
-    su
+    procrank
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=3
@@ -219,6 +214,13 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/spirit/prebuilt/common/su/su:system/xbin/daemonsu \
+    vendor/spirit/prebuilt/common/su/su:system/xbin/su \
+    vendor/spirit/prebuilt/common/su/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/spirit/prebuilt/common/su/Superuser.apk:system/priv-app/SuperSU/SuperSU.apk
+
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
-    vendor/spirit/prebuilt/common/app/Nova_Launcher_3.3beta3.apk:system/priv-app/Nova_Launcher_3.3beta3.apk
+    vendor/spirit/prebuilt/common/app/Nova_Launcher_3.3beta3.apk:system/priv-app/Nova_Launcher/Nova_Launcher_3.3beta3.apk

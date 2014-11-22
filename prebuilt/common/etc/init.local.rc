@@ -1,5 +1,4 @@
-# CyanogenMod Extras
-import /init.superuser.rc
+# Spirit Extras
 
 on init
     export ANDROID_CACHE /cache
