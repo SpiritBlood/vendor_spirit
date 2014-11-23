@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
     procrank
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=1
+    persist.sys.root_access=3
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/spirit/overlay/common
 
@@ -219,7 +219,7 @@ PRODUCT_COPY_FILES += \
     vendor/spirit/prebuilt/common/su/su:system/xbin/daemonsu \
     vendor/spirit/prebuilt/common/su/su:system/xbin/su \
     vendor/spirit/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/spirit/prebuilt/common/su/Superuser.apk:system/priv-app/SuperSU/SuperSU.apk
+    vendor/spirit/prebuilt/common/su/Superuser.apk:system/app/SuperSU/SuperSU.apk
 
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
