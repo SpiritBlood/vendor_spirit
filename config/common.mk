@@ -224,6 +224,10 @@ PRODUCT_COPY_FILES += \
 	vendor/spirit/prebuilt/common/hfm/hosts.alt:system/etc/hosts.alt \
 	vendor/spirit/prebuilt/common/hfm/hosts.og:system/etc/hosts.og
 
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/spirit/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 # SPIRIT EXTRA Files
 PRODUCT_COPY_FILES += \
     vendor/spirit/prebuilt/common/app/Nova_Launcher_3.3.apk:system/priv-app/Nova_Launcher/Nova_Launcher_3.3.apk
