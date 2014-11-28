@@ -215,11 +215,9 @@ PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 # SU Support
-#PRODUCT_COPY_FILES += \
-#    vendor/spirit/prebuilt/common/su/su:system/xbin/daemonsu \
-#    vendor/spirit/prebuilt/common/su/su:system/xbin/su \
-#    vendor/spirit/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-#    vendor/spirit/prebuilt/common/su/Superuser.apk:system/app/SuperSU/SuperSU.apk
+PRODUCT_COPY_FILES += \
+    vendor/spirit/prebuilt/common/su/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/spirit/prebuilt/common/su/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip
 
 # HFM Files
 PRODUCT_COPY_FILES += \
