@@ -132,8 +132,6 @@ PRODUCT_PACKAGES += \
 
 # Spirit packages
 PRODUCT_PACKAGES += \
-    SlimLauncher \
-    DashClock \
     DeskClock
 
 # CM Hardware Abstraction Framework
